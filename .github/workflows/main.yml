@@ -1,0 +1,25 @@
+name: Go
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: go get -t -v ./...
+
+    - name: Run tests with coverage
+      run: |
+        mkdir coverage
+        go test -coverprofile=coverage/coverage.out ./...
+    - name: Generate coverage report
+      run: go tool cover -func=coverage/coverage.out
