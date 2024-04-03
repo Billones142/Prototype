@@ -6,7 +6,7 @@ import (
 
 func Test_testName(t *testing.T) {
 
-	if condition {
+	if true {
 		t.Errorf("")
 	}
 }
