@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math/rand"
 
-	interfaces "github.com/Billones142/Protoype/Interfaces"
+	interfaces "github.dev/Billones142/Prototype/Interfaces"
 )
 
 type ReporteMedico struct {
