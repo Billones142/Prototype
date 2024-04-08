@@ -22,9 +22,9 @@ func main() {
 	// Ademas de que las variables privadas no se podian conocer desde afuera asi que el mismo objeto es el que
 	// se tenia que encargar de su clonacion
 
-	fmt.Println("Reporte Original:")
+	fmt.Println("Reporte original:")
 	reporteOriginal.ImprimirReporte()
 
-	fmt.Println("Nuevo reporte Original:")
+	fmt.Println("Nuevo reporte:")
 	nuevoReporte.ImprimirReporte()
 }
