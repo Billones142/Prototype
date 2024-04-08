@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	clases "github.dev/Billones142/Prototype/Clases"
+	clases "github.com/Billones142/Prototype/Clases"
 )
 
 func main() {
