@@ -17,7 +17,7 @@ func Test_ReporteMedico_Clonacion(t *testing.T) {
 
 	copiaReporte := (reporteOriginal.Clonar()).(*clases.ReporteMedico)
 
-	SonIguales := reporteOriginal != copiaReporte
+	SonIguales := &reporteOriginal == &copiaReporte
 
 	cuerpo := reporteOriginal.Cuerpo == copiaReporte.Cuerpo
 	formato := reporteOriginal.Formato == copiaReporte.Formato
